@@ -44,4 +44,4 @@ Every change is checked against the twelve product principles in the `oriw` READ
 - Commits are authored by the person running the session (their git config). Keep the commit message trailers the session adds.
 - **The repos are the source of truth.** Designs and mocks go in `oriw-design/mocks/` (HTML plus a PNG); product and technical decisions go in the repo they affect (`oriw/docs/`, `oriw-company/`). Claude artifacts and docs are previews only: copy anything decided into the right repo in the same session.
 - Plain, specific English in code comments, docs, issues and UI text. No jargon where a plain word works.
-- `main` is protected in every repo: all changes go through a pull request with one approving review, and CI must pass where it exists. Never force-push.
+- `main` is protected in every repo: all changes go through a pull request and CI must pass where it exists. Never force-push. While the founder works alone, no approving review is needed; once the team joins, every pull request needs one approval from someone other than its author.
