@@ -42,5 +42,6 @@ Every change is checked against the twelve product principles in the `oriw` READ
 - Never commit passwords, keys or tokens. CI in `oriw` runs a secret scan; secrets live in GitHub encrypted secrets or the OS keychain.
 - Never put salaries, costs, revenue or customer names in a public repo; they belong in `oriw-company`.
 - Commits are authored by the person running the session (their git config). Keep the commit message trailers the session adds.
+- **The repos are the source of truth.** Designs and mocks go in `oriw-design/mocks/` (HTML plus a PNG); product and technical decisions go in the repo they affect (`oriw/docs/`, `oriw-company/`). Claude artifacts and docs are previews only: copy anything decided into the right repo in the same session.
 - Plain, specific English in code comments, docs, issues and UI text. No jargon where a plain word works.
 - `main` is protected in every repo: all changes go through a pull request with one approving review, and CI must pass where it exists. Never force-push.
