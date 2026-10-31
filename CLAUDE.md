@@ -43,4 +43,4 @@ Every change is checked against the twelve product principles in the `oriw` READ
 - Never put salaries, costs, revenue or customer names in a public repo; they belong in `oriw-company`.
 - Commits are authored by the person running the session (their git config). Keep the commit message trailers the session adds.
 - Plain, specific English in code comments, docs, issues and UI text. No jargon where a plain word works.
-- Don't push to `main` in `oriw`; open a pull request. Small docs-only changes in the other repos may go straight to `main`.
+- `main` is protected in every repo: all changes go through a pull request with one approving review, and CI must pass where it exists. Never force-push.
