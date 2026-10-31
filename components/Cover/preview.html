@@ -1,0 +1,37 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html><head><meta charset="utf-8"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&amp;display=swap">
+<style>
+body{margin:0;background:var(--canvas-bg)}
+.cover{position:relative;width:960px;height:288px;background:var(--canvas-bg);font-family:var(--font-sans);overflow:hidden}
+.name{position:absolute;left:48px;bottom:56px;margin:0;font-size:120px;line-height:.92;font-weight:700;letter-spacing:-0.03em;color:var(--ink)}
+.tag{position:absolute;left:52px;bottom:28px;margin:0;font-size:14px;line-height:20px;color:var(--ink-muted);max-width:440px}
+.art{position:absolute;left:480px;top:0}
+.ink{fill:var(--ink)}
+.accent{fill:var(--accent)}
+.yellow{fill:var(--sticky-yellow)}
+.coral{fill:var(--sticky-coral)}
+.blue{fill:var(--sticky-blue)}
+.dot{fill:var(--canvas-bg)}
+.r-lg{rx:var(--radius-lg)}
+</style></head>
+<body>
+<div class="cover">
+<svg class="art" width="480" height="288" viewBox="0 0 480 288" aria-hidden="true">
+<!-- blocks: ink slab 176x240 (radius-lg), accent 240x112 (radius-lg), sticky-yellow 112x112, sticky-coral 112x48, sticky-blue 112x48 (square paper corners) -->
+<!-- arrangement: one tall slab with satellites, gaps space-4 (16px), inset space-6 (24px) -->
+<!-- pattern: dot grid cut out of the ink slab in canvas-bg — the canvas dot grid is what Oriw is ("the board is the hero") -->
+<!-- scales: pitch space-8 (32px), gaps space-4, inset space-6, radius-lg on UI blocks, 0 on stickies -->
+<defs><pattern id="orim-dots" x="40" y="40" width="32" height="32" patternUnits="userSpaceOnUse"><circle class="dot" cx="0" cy="0" r="2.4"></circle></pattern></defs>
+<rect class="ink r-lg" x="24" y="24" width="176" height="240"></rect>
+<rect x="24" y="24" width="176" height="240" fill="url(#orim-dots)"></rect>
+<rect class="accent r-lg" x="216" y="24" width="240" height="112"></rect>
+<rect class="yellow" x="216" y="152" width="112" height="112"></rect>
+<rect class="coral" x="344" y="152" width="112" height="48"></rect>
+<rect class="blue" x="344" y="216" width="112" height="48"></rect>
+</svg>
+<h1 class="name">Oriw</h1>
+<p class="tag">Calm, private canvas for thinking together.</p>
+</div>
+<script>document.documentElement.setAttribute('data-ready','1');</script>
+</body></html>
