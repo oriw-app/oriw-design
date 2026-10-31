@@ -7,6 +7,7 @@ Write a handoff for the issue this session worked on (ask which, if it isn't cle
    - **Done:** what changed, with commit or pull request links.
    - **Next:** the remaining steps, in order, specific enough to start without re-reading the code.
    - **Blocked or decisions needed:** anything waiting on a person, with their name if known.
+   - **Scenarios:** which ones pass, which are still `@wip`.
    - **How to check:** commands to build and test what exists.
 2. Make sure work in progress is committed and pushed to the issue's branch first.
 3. Post it as a comment on the issue: `gh api -X POST repos/oriw-app/<repo>/issues/<n>/comments -f body=...`, starting with the heading "Handoff".
