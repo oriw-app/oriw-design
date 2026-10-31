@@ -7,6 +7,7 @@ The mark is a ring with a centre point: a board seen from far away, and the one 
 | `oriw-icon.svg`, `png/oriw-icon-*.png` | App icon for Windows and Linux, plus favicons (16 to 1024 px) |
 | `oriw-icon-macos.svg`, `png/oriw-icon-macos-1024.png`, `png/oriw.icns` | macOS app icon, drawn on Apple's 824 px plate with a shadow |
 | `png/oriw.ico` | Windows icon (16 to 256 px in one file) |
+| `png/apple-touch-icon.png` | iPhone and iPad home-screen icon for the website (180 px) |
 | `oriw-avatar.svg`, `../github/oriw-org-avatar-500.png` | GitHub organisation avatar (full bleed, GitHub rounds the corners) |
 | `github/oriw-social-preview-1280x640.png` | Repository social preview card |
 | `oriw-wordmark.svg`, `oriw-wordmark-white.svg` | Mark plus name, for light and dark backgrounds; text is outlined, no font needed |
