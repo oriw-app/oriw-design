@@ -1,0 +1,13 @@
+{
+  "extraKnownMarketplaces": {
+    "dev-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "oriw-app/dev-plugins"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "issuewright@dev-plugins": true
+  }
+}
